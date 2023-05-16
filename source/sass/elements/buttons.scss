@@ -1,0 +1,130 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--slider,
+  &--main,
+  &--apply,
+  &--reset {
+    background-color: $primary;
+    @include btn;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-lighter;
+    }
+
+    &:active {
+      background-color: $primary-darken;
+    }
+
+    &:disabled {
+      background-color: $grey;
+      cursor: no-drop;
+    }
+  }
+
+  &--main {
+    @include btn-main;
+  }
+
+  &--reset {
+    color: $primary;
+    background-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+      color: $white;
+    }
+
+    &:disabled {
+      background-color: $light-grey;
+      cursor: no-drop;
+    }
+  }
+}
+
+
+
+
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 280px;
+//   height: 40px;
+//   font-family: inherit;
+//   font-size: 16px;
+//   line-height: 24px;
+//   text-decoration: none;
+//   color: $white;
+//   background: $primary;
+//   border-radius: 4px;
+//   border: none;
+//   cursor: pointer;
+//   transition: 0.5s ease-in-out;
+// }
+
+// .button:hover {
+//   background: $primary-lighter;
+// }
+
+// .button:active {
+//   background: $primary-darken;
+// }
+
+// .button-disabled,
+// .button:disabled {
+//   background: $grey;
+//   cursor: no-drop;
+// }
+
+// .button-inner {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 280px;
+//   height: 40px;
+//   font-family: inherit;
+//   font-size: 16px;
+//   line-height: 24px;
+//   text-decoration: none;
+//   color: $primary;
+//   background: $white;
+//   border-radius: 4px;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .button-inner:hover {
+//   color: $white;
+//   background: $primary-lighter;
+// }
+
+// .button-inner:active {
+//   color: $white;
+//   background: $primary-darken;
+// }
+
+// .button-inner-disabled,
+// .button-inner:disabled {
+//   color: $white;
+//   background: $light-grey;
+//   cursor: no-drop;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .button {
+//     padding: 8px 20px;
+//     font-size: 16px;
+//     line-height: 24px;
+//   }
+// }

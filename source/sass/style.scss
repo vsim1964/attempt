@@ -1,0 +1,21 @@
+/* utils */
+@import "utils/variables";
+@import "utils/mixins";
+
+/* global */
+@import "global/fonts";
+@import "global/reset";
+
+/* components */
+@import "components/header";
+@import "components/slider";
+@import "components/advantages";
+@import "components/catalog";
+@import "components/form";
+@import "components/form-disabled";
+@import "components/paginations";
+@import "components/map";
+@import "components/footer";
+
+/* elements */
+@import "elements/buttons";

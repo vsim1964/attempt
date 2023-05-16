@@ -1,0 +1,18 @@
+{
+  "icons": [
+    {
+      "src": "./img/favicons/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./img/favicons/apple-icon-60x60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    }
+  ],
+  "name": "Проект 'Drink2Go'",
+  "short_name": "'Drink2Go'",
+  "description": "Интерент-магазин"
+}
+  

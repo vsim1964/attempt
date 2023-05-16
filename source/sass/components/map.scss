@@ -1,0 +1,33 @@
+.map-nojs .map__picture-image {
+  display: flex;
+  width: 100%;
+}
+
+.map-nojs .map__container {
+  display: none;
+}
+
+.map__picture-image {
+  display: none;
+}
+
+.map__container {
+  display: flex;
+  height: 419px;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__container {
+    height: 480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__container {
+    height: 540px;
+  }
+}

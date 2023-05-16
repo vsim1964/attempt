@@ -1,0 +1,233 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 23px;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 21px 18px;
+  border-bottom: 2px solid $secondary;
+}
+
+.footer__column-social {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__column-links {
+  padding-bottom: 25px;
+}
+
+.footer__column-social-info {
+  display: none;
+}
+
+.footer__column-social-list {
+  display: flex;
+  margin-top: 3px;
+  margin-right: 9px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer__column-social-logo:hover,
+.footer__column-social-logo:focus,
+.footer__column-social-logo:active {
+  opacity: 0.85;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer__column-social-icon {
+  color: $grey;
+}
+
+.footer__column-social-link:hover .footer__column-social-icon,
+.footer__column-social-link:focus .footer__column-social-icon,
+.footer__column-social-link:active .footer__column-social-icon {
+  color: $primary;
+  transition: 0.5s ease-in-out;
+}
+
+.footer__column-title {
+  @include text;
+  font-weight: 700;
+  text-align: start;
+  color: $primary;
+}
+
+.footer__column-contacts-title {
+  margin-bottom: 7px;
+}
+
+.footer__column-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $black;
+  transition: 0.5s ease-in-out;
+}
+
+.footer__column-link:hover,
+.footer__column-link:focus {
+  color: $primary;
+}
+
+.footer__column-link:active {
+  color: $primary-darken;
+}
+
+.footer__column-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__column-icon {
+  width: 18px;
+  height: auto;
+}
+
+.footer__column-icon--phone {
+  width: 13px;
+  height: auto;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.contacts__info {
+  @include text;
+  margin-bottom: 3px;
+  text-align: start;
+  letter-spacing: 0;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 6px 22px 16px;
+}
+
+.copyright__text,
+.copyright__link {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey;
+  transition: 0.5s ease-in-out;
+}
+
+.copyright__text {
+  padding-right: 5px;
+}
+
+.copyright__link {
+  gap: 5px;
+}
+
+.copyright__link-icon {
+  transition: 0.5s ease-in-out;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  color: $primary;
+}
+
+.copyright__link:active {
+  color: $primary-darken;
+}
+
+.copyright__link:hover .copyright__link-icon,
+.copyright__link:focus .copyright__link-icon {
+  color: $primary;
+}
+
+.copyright__link:active .copyright__link-icon {
+  color: $primary-darken;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 730px;
+    margin: 0 auto 10px;
+    padding-top: 42px;
+    gap: 6px 31px;
+  }
+
+  .footer__column-social {
+    grid-column: 1/-1;
+  }
+
+  .footer__column-social-logo {
+    width: 170px;
+    height: auto;
+  }
+
+  .footer__column {
+    padding: 0;
+    padding-bottom: 8px;
+    border: none;
+  }
+
+  .footer__column-icon--local {
+    width: 22px;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1360px;
+    margin-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .footer__column-social {
+    grid-column: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer__column-social-info {
+    @include text;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 56px;
+  }
+
+  .footer__column-social-list {
+    margin-left: 11px;
+    margin-right: 0;
+  }
+
+  .footer__column-title {
+    margin-top: 9px;
+  }
+
+  .footer__column-icon--local {
+    width: 16px;
+    height: auto;
+  }
+}
