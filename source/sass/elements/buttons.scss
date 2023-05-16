@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 20px;
+  width: 113px;
+  height: 40px;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -34,6 +35,14 @@
     @include btn-main;
   }
 
+  &--apply,
+  &--reset {
+    @media (max-width:767.98px) {
+      width: 280px;
+      height: 40px;
+    }
+  }
+
   &--reset {
     color: $primary;
     background-color: $white;
@@ -51,80 +60,3 @@
     }
   }
 }
-
-
-
-
-// .button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 280px;
-//   height: 40px;
-//   font-family: inherit;
-//   font-size: 16px;
-//   line-height: 24px;
-//   text-decoration: none;
-//   color: $white;
-//   background: $primary;
-//   border-radius: 4px;
-//   border: none;
-//   cursor: pointer;
-//   transition: 0.5s ease-in-out;
-// }
-
-// .button:hover {
-//   background: $primary-lighter;
-// }
-
-// .button:active {
-//   background: $primary-darken;
-// }
-
-// .button-disabled,
-// .button:disabled {
-//   background: $grey;
-//   cursor: no-drop;
-// }
-
-// .button-inner {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 280px;
-//   height: 40px;
-//   font-family: inherit;
-//   font-size: 16px;
-//   line-height: 24px;
-//   text-decoration: none;
-//   color: $primary;
-//   background: $white;
-//   border-radius: 4px;
-//   border: none;
-//   cursor: pointer;
-// }
-
-// .button-inner:hover {
-//   color: $white;
-//   background: $primary-lighter;
-// }
-
-// .button-inner:active {
-//   color: $white;
-//   background: $primary-darken;
-// }
-
-// .button-inner-disabled,
-// .button-inner:disabled {
-//   color: $white;
-//   background: $light-grey;
-//   cursor: no-drop;
-// }
-
-// @media (min-width: $tablet-width) {
-//   .button {
-//     padding: 8px 20px;
-//     font-size: 16px;
-//     line-height: 24px;
-//   }
-// }
