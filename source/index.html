@@ -19,61 +19,59 @@
 </head>
 
 <body>
-
-  <header class="main-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs container">
-      <a class="main-nav__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-          <img class="navigation__logo-image" src="./img/logo-mobile.svg" loading="lazy"
-            alt="Логотип интерент-магазина «Drink2Go»">
-        </picture>
-      </a>
-      <p class="main-nav__description">Интернет-магазин<br> кофейных напитков</p>
-      <ul class="main-nav__list main-nav__list--site">
-        <li class="main-nav__item main-nav__item--site">
-          <a class="main-nav__link main-nav__link--site main-nav__link--current">Главная</a>
-        </li>
-        <li class="main-nav__item main-nav__item--site">
-          <a class="main-nav__link main-nav__link--site" href="#">Каталог</a>
-        </li>
-        <li class="main-nav__item main-nav__item--site">
-          <a class="main-nav__link main-nav__link--site" href="#">Доставка</a>
-        </li>
-        <li class="main-nav__item main-nav__item--site">
-          <a class="main-nav__link main-nav__link--site" href="#">О нас</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list main-nav__list--user-menu">
-        <li class="main-nav__item main-nav__item--user">
-          <a class="main-nav__link main-nav__link--user" href="#">
-            <svg class="main-nav__icon main-nav__icon--user" width="16" height="16" viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#user"></use>
-            </svg>
-            <span class="main-nav__icon-description">Войти</span>
-            <span class="visually-hidden">Войти.</span>
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--user">
-          <a class="main-nav__link main-nav__link--user" href="#">
-            <svg class="main-nav__icon main-nav__icon--cart" width="16" height="16" viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#basket"></use>
-            </svg>
-            <span class="main-nav__icon-description">Корзина</span>
-            <span class="visually-hidden">Корзина.</span>
-          </a>
-        </li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
+  <header class="header">
+    <nav class="header__closed header__nojs">
+      <div class="container navigation">
+        <a class="navigation__logo " href="./index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="navigation__logo-image" src="./img/logo-mobile.svg" loading="lazy" width="32" height="36"
+              alt="Логотип интерент-магазина «Drink2Go»">
+          </picture>
+          <p class="navigation__logo-text">Интернет-магазин кофейных напитков</p>
+        </a>
+        <ul class="navigation__list navigation-site">
+          <li class="navigation__item current-link">
+            <a class="navigation__link " href="#slide">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link " href="#catalog">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link " href="#maps">Доставка</a>
+          </li>
+          <li class="navigation__item navigation__item-last">
+            <a class="navigation__link " href="#advantages">О нас</a>
+          </li>
+        </ul>
+        <ul class="navigation__list navigation-users">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__user " href="#">
+              <svg class="navigation__link-icon" aria-label="Вход в личный кабинет" width="22" height="22"
+                aria-hidden="true" focusable="false" fill="currentColor">
+                <use xlink:href="./img/icons/stack.svg#user"></use>
+              </svg>
+              <span class="navigation__search-text">Войти</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__bags " href="#">
+              <svg class="navigation__link-icon" aria-label="Корзина" width="22" height="22" aria-hidden="true"
+                focusable="false" fill="currentColor">
+                <use xlink:href="./img/icons/stack.svg#basket"></use>
+              </svg>
+              <span class="navigation__cart-text">Корзина</span>
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
     </nav>
   </header>
-
-
+  <!-- <main class="main"> -->
   <main>
     <h1 class="visually-hidden">Интернет-магазин «Drink2Go»</h1>
     <section class="slider swiper" id="slide">
@@ -348,7 +346,7 @@
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -368,7 +366,7 @@
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -387,7 +385,7 @@
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -407,7 +405,7 @@
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -427,7 +425,7 @@
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -440,14 +438,13 @@
                     width="130" height="188">
                 </picture>
                 <h3 class="catalog__item-title">Декаф Флэт Уайт</h3>
-                <p class="catalog__item-text">Кофе без кофеина из Эфиопии
-                  с&nbsp;натуральным фермерским молоком</p>
+                <p class="catalog__item-text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="catalog__item-order">
                   <p class="catalog__item-order-price">225₽</p>
                   <button class="button button--main" type="button">
                     <svg class="button__order-icon" aria-label="Добавить в корзину" width="20" height="16"
                       aria-hidden="true" focusable="false" fill="currentColor">
-                      <use xlink:href="./img/icons/stack.svg#icons-bags-add"></use>
+                      <use xlink:href="./img/icons/stack.svg#add-cart"></use>
                     </svg>
                     <span class="button__order-text">В корзину</span>
                   </button>
@@ -521,7 +518,7 @@
             <a class="footer__column-social-link " href="#">
               <svg class="footer__column-social-icon" aria-label="Мы в социальной сети Вконтакте." width="20"
                 height="20" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="./img/icons/stack.svg#icons-social-vk"></use>
+                <use xlink:href="./img/icons/stack.svg#vk"></use>
               </svg>
             </a>
           </li>
@@ -529,7 +526,7 @@
             <a class="footer__column-social-link " href="#">
               <svg class="footer__column-social-icon" aria-label="Мы в социальной сети Pinterest." width="20"
                 height="20" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="./img/icons/stack.svg#icons-social-pinterest"></use>
+                <use xlink:href="./img/icons/stack.svg#pinterest"></use>
               </svg>
             </a>
           </li>
@@ -537,7 +534,7 @@
             <a class="footer__column-social-link " href="#">
               <svg class="footer__column-social-icon" aria-label="Мы в социальной сети Одноклассиники." width="20"
                 height="20" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="./img/icons/stack.svg#icons-social-ok"></use>
+                <use xlink:href="./img/icons/stack.svg#ok"></use>
               </svg>
             </a>
           </li>
@@ -609,7 +606,7 @@
   <script src="./vendor/nouislider/nouislider.min.js"></script>
   <script src="./vendor/swiper/swiper-bundle.min.js"></script>
   <script src="./js/map.js"></script>
-  <script src="./js/script.js" type="module"></script>
+  <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

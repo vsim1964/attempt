@@ -561,13 +561,13 @@
   .toggle-min:active::after,
   .toggle-min:focus::after,
   .toggle-min:hover::after {
-    transform: scale(0.75) translate(0, 0);
+    transform: scale(1) translate(0, 0);
   }
 
   .toggle-max:active::after,
   .toggle-max:focus::after,
   .toggle-max:hover::after {
-    transform: scale(0.75) translate(1px, 0);
+    transform: scale(1) translate(1px, 0);
   }
 
   .form__fieldset-checkbox {
