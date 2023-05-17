@@ -14,6 +14,7 @@
   &--apply,
   &--reset {
     background-color: $primary;
+
     @include btn;
 
     &:hover,

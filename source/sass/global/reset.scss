@@ -12,14 +12,10 @@ body {
   display: flex;
   margin: 0;
   flex-direction: column;
+  min-width: 320px;
   min-height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $black;
-  background-color: $white;
 }
 
 ol,
@@ -39,11 +35,6 @@ img {
   height: auto;
 }
 
-
-// .main {
-//   flex-grow: 1;
-// }
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -60,8 +51,6 @@ img {
   }
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,13 +65,5 @@ img {
 }
 
 .span-info {
-  display: flex;
-  justify-content: center;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $primary;
+  @include tag-line;
 }
