@@ -33,12 +33,22 @@
 
   &--main {
     @include btn-main;
+    width: 141px;
+    height: 36px;
   }
 
   &--apply,
   &--reset {
-    @media (max-width:767.98px) {
-      width: 280px;
+    width: 280px;
+    height: 40px;
+
+    @media (min-width: $tablet) {
+      width: 140px;
+      height: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 150px;
       height: 40px;
     }
   }

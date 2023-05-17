@@ -49,12 +49,12 @@ img {
   margin: 0 auto;
   padding: 0 22px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     max-width: 730px;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     max-width: 1360px;
     padding: 0;
   }

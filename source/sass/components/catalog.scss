@@ -81,7 +81,7 @@
   line-height: 20px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .catalog {
     padding-top: 80px;
     padding-bottom: 88px;
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .catalog {
     padding-top: 100px;
     padding-bottom: 118px;
@@ -164,4 +164,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 60px;
   }
+}
+
+.button__order-text {
+  padding-left: 10px;
 }

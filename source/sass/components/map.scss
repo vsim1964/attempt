@@ -20,13 +20,13 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .map__container {
     height: 480px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .map__container {
     height: 540px;
   }

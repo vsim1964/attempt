@@ -42,7 +42,7 @@
   margin-top: 3px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .advantages {
     margin-bottom: 84px;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .advantages {
     margin-bottom: 102px;
     padding-top: 100px;

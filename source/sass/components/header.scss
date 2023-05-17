@@ -162,7 +162,7 @@
   display: none;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile) {
   .header__nojs {
     height: 286px;
     overflow: hidden;
@@ -186,7 +186,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .navigation {
     grid-template-columns: 1fr 3fr 1fr;
   }
@@ -256,7 +256,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .navigation {
     grid-template-columns: 1fr 3fr 2fr;
   }

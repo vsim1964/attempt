@@ -452,7 +452,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .form__fieldset-legend {
     margin-bottom: 18px;
   }
@@ -524,7 +524,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .form__fieldset-range {
     width: 320px;
   }

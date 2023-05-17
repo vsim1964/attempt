@@ -164,7 +164,7 @@
   color: $primary-darken;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -195,7 +195,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1360px;
