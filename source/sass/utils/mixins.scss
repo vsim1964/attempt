@@ -109,7 +109,7 @@
   color: $primary;
 }
 
-@mixin lable {
+@mixin label {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -145,10 +145,19 @@
 
 
 @mixin tag-line {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #7859cf;
+}
+
+@mixin radio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
 }

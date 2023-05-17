@@ -4,6 +4,7 @@
   align-items: center;
   width: 113px;
   height: 40px;
+  @include btn;
   border: none;
   outline: none;
   border-radius: 4px;

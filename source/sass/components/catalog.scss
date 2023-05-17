@@ -18,7 +18,7 @@
 .catalog__aside-form {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 28px;
 }
 
 .catalog__list {
@@ -191,11 +191,7 @@
 .form__fieldset-legend {
   margin-bottom: 21px;
   padding: 0;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: $black;
+  @include label;
 }
 
 .form__fieldset-legend-checkbox {
@@ -228,8 +224,7 @@
   display: none;
 }
 
-.range__nojs .range__bar,
-.noUi-connect {
+.range__scale .range__bar {
   display: block;
   position: absolute;
   width: 93%;
@@ -241,9 +236,7 @@
   width: 100%;
 }
 
-.range__nojs .range__toggle,
-.noUi-handle.noUi-handle-lower,
-.noUi-handle.noUi-handle-upper {
+.range__scale .range__toggle {
   display: block;
   position: absolute;
   top: -9px;
@@ -254,14 +247,7 @@
   border: 2px solid $primary-lighter;
 }
 
-.noUi-handle.noUi-handle-lower,
-.noUi-handle.noUi-handle-upper {
-  top: -11px;
-}
-
-.range__toggle::after,
-.noUi-handle::before,
-.noUi-handle::after {
+.range__toggle::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -284,22 +270,9 @@
   background-color: $primary-opacity;
 }
 
-.noUi-handle:hover::before,
-.noUi-handle:hover::after,
-.noUi-handle:focus::before,
-.noUi-handle:focus::after {
-  transform: scale(0.75) translate(-1px, 0);
-  background-color: $primary-opacity;
-}
 
 .range__toggle:active::after {
   transform: scale(0.75) translate(0, 1px);
-  background-color: $primary;
-}
-
-.noUi-handle:active::before,
-.noUi-handle:active::after {
-  transform: scale(0.75) translate(-1px, 0);
   background-color: $primary;
 }
 
@@ -365,11 +338,7 @@
 .checkbox__label {
   position: relative;
   display: block;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $black;
+  @include radio;
   cursor: pointer;
 }
 
@@ -464,7 +433,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 24px;
-  margin: auto;
+  margin-top: -10px;
+  margin-bottom: -6px;
 }
 
 .form__fieldset-button {
@@ -490,11 +460,11 @@
   margin-bottom: 20px;
 }
 
-.select-nojs .select__control {
+.select .select__control {
   display: flex;
 }
 
-.select-nojs .select__control-div {
+.select .select__control-div {
   display: none;
 }
 
@@ -678,9 +648,9 @@
   .form__fieldset-buttons {
     flex-direction: row;
     grid-column: 1/-1;
-    transform: translate(-27px, 0);
-    gap: 32px;
+    gap: 3px;
     flex-wrap: wrap;
+    margin-top: 3px;
   }
 
   .form__fieldset-checkbox {
@@ -866,10 +836,7 @@
 }
 
 .pagination-current {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: $black;
+  @include text;
   background-color: transparent;
 }
 

@@ -244,9 +244,6 @@
     padding-top: 150px;
   }
 
-  .slide__span {
-    justify-content: flex-start;
-  }
 
   .slide__title,
   .slide__text {
@@ -293,5 +290,13 @@
   .slider__pagination .swiper-pagination-bullet:hover,
   .slider__pagination .swiper-pagination-bullet:focus {
     background-color: $primary-opacity;
+  }
+}
+
+.tag-line {
+  text-align: center;
+
+  @media (min-width: $desktop) {
+    text-align: left;
   }
 }
